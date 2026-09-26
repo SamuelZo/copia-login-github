@@ -144,3 +144,13 @@ footer a {
     font-size: 14px;
     line-height: 1.5;
 }
+
+@media (min-width: 768px) {
+    .login-container {
+        max-width: 360px;
+    }
+
+    .sobre-projeto {
+        margin-top: 50px;
+    }
+}
