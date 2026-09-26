@@ -82,3 +82,56 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.login-container > p {
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.create-account {
+    margin-top: 20px;
+    padding: 16px;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.create-account p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 24px 16px;
+    text-align: center;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+footer a {
+    font-size: 12px;
+}
+
+.sobre-projeto {
+    max-width: 600px;
+    margin: 40px auto 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.sobre-projeto h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.sobre-projeto p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
