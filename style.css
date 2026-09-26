@@ -1,3 +1,11 @@
+:root {
+    --cor-fundo: #ffffff;
+    --cor-texto: #1f2328;
+    --cor-borda: #d0d7de;
+    --cor-link: #0969da;
+    --cor-botao: #1f883d;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -11,8 +19,9 @@ header {
 
 body {
     margin: 0;
-    background-color: #ffffff;
+    background-color: var(--cor-fundo);
     font-family: Arial, sans-serif;
+    color: var(--cor-texto);
 }
 
 main {
@@ -53,7 +62,7 @@ input {
     box-sizing: border-box;
     width: 100%;
     padding: 8px 12px;
-    border: 1px solid #d0d7de;
+    border: 1px solid var(--cor-borda);
     border-radius: 6px;
     font-size: 14px;
 }
@@ -63,7 +72,7 @@ button {
     padding: 8px 16px;
     border: 1px solid #1f2328;
     border-radius: 6px;
-    background-color: #1f883d;
+    background-color: var(--cor-botao);
     color: white;
     font-size: 14px;
     font-weight: bold;
@@ -75,7 +84,7 @@ button:hover {
 }
 
 a {
-    color: #0969da;
+    color: var(--cor-link);
     text-decoration: none;
 }
 
@@ -91,7 +100,7 @@ a:hover {
 .create-account {
     margin-top: 20px;
     padding: 16px;
-    border: 1px solid #d0d7de;
+    border: 1px solid var(--cor-borda);
     border-radius: 6px;
     text-align: center;
 }
