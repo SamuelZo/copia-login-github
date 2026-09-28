@@ -33,11 +33,12 @@ GitHub
 Capturas de tela
 
 Página de referência:
-Adicionar captura de tela da página original do GitHub.
+
+![Página de referência](projeto-referencia.png)
 
 Página desenvolvida:
 
-![Página desenvolvida](projeto-página.png)
+![Página desenvolvida](projeto-copia.png)
 
 Autor
 
