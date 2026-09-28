@@ -36,7 +36,8 @@ Página de referência:
 Adicionar captura de tela da página original do GitHub.
 
 Página desenvolvida:
-Adicionar captura de tela da página desenvolvida neste projeto.
+
+![Página desenvolvida](projeto-página.png)
 
 Autor
 

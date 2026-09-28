@@ -44,7 +44,24 @@ main {
 form {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
+}
+
+.separador {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 16px 0;
+    font-size: 14px;
+    color: #656d76;
+}
+
+.separador::before,
+.separador::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: var(--cor-borda);
 }
 
 form div {
@@ -83,6 +100,32 @@ button:hover {
     background-color: #1a7f37;
 }
 
+.social-button {
+    width: 100%;
+    padding: 8px 16px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 6px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.social-button:hover {
+    background-color: #f6f8fa;
+}
+
 a {
     color: var(--cor-link);
     text-decoration: none;
@@ -92,16 +135,8 @@ a:hover {
     text-decoration: underline;
 }
 
-.login-container > p {
-    margin-top: 16px;
-    font-size: 14px;
-}
-
 .create-account {
     margin-top: 20px;
-    padding: 16px;
-    border: 1px solid var(--cor-borda);
-    border-radius: 6px;
     text-align: center;
 }
 
@@ -119,8 +154,9 @@ footer {
 footer nav {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 16px 24px;
 }
 
 footer a {
@@ -129,7 +165,7 @@ footer a {
 
 .sobre-projeto {
     max-width: 600px;
-    margin: 40px auto 0;
+    margin: 50px auto 0;
     padding: 20px;
     text-align: center;
 }
@@ -163,4 +199,25 @@ input:focus {
 button:focus {
     outline: 2px solid var(--cor-link);
     outline-offset: 2px;
+}
+
+form div.senha-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 6px;
+}
+
+form div.senha-label a {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.passkey-link {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 8px;
 }

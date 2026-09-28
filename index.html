@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrar no GitHub</title>
+    <title>Faça login no GitHub</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,53 +20,70 @@
     <main>
         <section class="login-container">
 
-            <h1>Entrar no GitHub</h1>
+            <h1>Faça login no GitHub</h1>
 
-            <form>
+            <form action = "#" method = "post">
                 <div>
                     <label for="email">Nome de usuário ou endereço de e-mail</label>
                     <input type="text" id="email" name="email" autocomplete="username" required>
                 </div>
 
                 <div>
-                    <label for="senha">Senha</label>
+                    <div class="senha-label">
+                        <label for="senha">Senha</label>
+                        <a href="#">Esqueceu sua senha?</a>
+                    </div>
+
                     <input type="password" id="senha" name="senha" autocomplete="current-password" required>
                 </div>
 
                 <button type="submit">Entrar</button>
-            </form>
 
-            <p>
-                <a href="#">Esqueceu sua senha?</a>
-            </p>
+                <p class="separador">ou</p>
+
+                <button type="button" class="social-button">
+                    <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt=""
+                        class="social-icon">
+                    <span>Continuar com o Google</span>
+                </button>
+
+                <button type="button" class="social-button">
+                    <img src="https://cdn.simpleicons.org/apple" alt="" class="social-icon">
+                    <span>Continue com a Apple</span>
+                </button>
+
+            </form>
 
             <div class="create-account">
                 <p>
-                    Novo no GitHub?
-                    <a href="#">Criar uma conta</a>
+                    É novo no GitHub?
+                    <a href="#">Crie uma conta</a>
                 </p>
             </div>
 
+            <a href="#" class="passkey-link">Faça login com uma chave de acesso</a>
+
         </section>
         <section class="sobre-projeto">
-    <h2>Sobre este projeto</h2>
-    <p>
-        Página desenvolvida por Samuel como parte de um projeto acadêmico
-        de Front-End,inspirado na página de login do GitHub.
-    </p>
-</section>
+            <h2>Sobre este projeto</h2>
+            <p>
+                Página desenvolvida por Samuel como parte de um projeto acadêmico
+                de Front-End,inspirado na página de login do GitHub.
+            </p>
+        </section>
     </main>
 
     <footer>
         <nav>
             <a href="#">Termos</a>
             <a href="#">Privacidade</a>
-            <a href="#">Segurança</a>
-            <a href="#">Contato</a>
+            <a href="#">Documentos</a>
+            <a href="#">Contate o suporte do GitHub</a>
+            <a href="#">Gerenciar cookies</a>
+            <a href="#">Não compartilhe minhas informações pessoais.</a>
         </nav>
     </footer>
 
 </body>
 
 </html>
-
